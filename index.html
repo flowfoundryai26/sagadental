@@ -1050,3 +1050,1055 @@
 </script>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sage Dental Care | Gentle, Modern Dentistry in a Calm Setting</title>
+<meta name="description" content="Sage Dental Care is a fictional dental clinic brand. Explore general dentistry, cleaning, implants, whitening, aligners and emergency care in a calm, patient-focused setting.>
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#0F766E">
+<meta property="og:title" content="Sage Dental Care | Gentle, Modern Dentistry">
+<meta property="og:description" content="A fictional dental clinic demo website. Calm, clear and patient-focused dental care.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1200&q=70">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%230F766E'/%3E%3Cpath transform='translate(4 4)' d='M12 5.5c-1.5-1.2-3-1.8-4.5-1.5C5 4.4 3.8 6.6 4 9c.2 2.2 1 3.6 1.5 5.5.5 2 .6 5.5 2.2 5.5 1.6 0 1.5-2.6 2-4.2.3-1 .9-1.6 2.3-1.6s2 .6 2.3 1.6c.5 1.6.4 4.2 2 4.2 1.6 0 1.7-3.5 2.2-5.5.5-1.9 1.3-3.3 1.5-5.5.2-2.4-1-4.6-3.5-5-1.5-.3-3 .3-4.5 1.5z' fill='none' stroke='%23fff' stroke-width='1.6' stroke-linejoin='round'/%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<script>
+  document.documentElement.classList.add('js');
+  /* Graceful image fallback: any image that fails to load is replaced with a tonal placeholder */
+  (function () {
+    var svg = "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 600' preserveAspectRatio='xMidYMid slice'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='#C5E7E0'/><stop offset='1' stop-color='#5FB7AB'/></linearGradient></defs><rect width='800' height='600' fill='url(#g)'/><g transform='translate(340 240) scale(5)' fill='none' stroke='#ffffff' stroke-width='1.2' stroke-linejoin='round' opacity='.8'><path d='M12 5.5c-1.5-1.2-3-1.8-4.5-1.5C5 4.4 3.8 6.6 4 9c.2 2.2 1 3.6 1.5 5.5.5 2 .6 5.5 2.2 5.5 1.6 0 1.5-2.6 2-4.2.3-1 .9-1.6 2.3-1.6s2 .6 2.3 1.6c.5 1.6.4 4.2 2 4.2 1.6 0 1.7-3.5 2.2-5.5.5-1.9 1.3-3.3 1.5-5.5.2-2.4-1-4.6-3.5-5-1.5-.3-3 .3-4.5 1.5z'/></g></svg>";
+    var FALLBACK = 'data:image/svg+xml;utf8,' + encodeURIComponent(svg);
+    document.addEventListener('error', function (e) {
+      var t = e.target;
+      if (t && t.tagName === 'IMG' && !t.dataset.fallback) { t.dataset.fallback = '1'; t.src = FALLBACK; }
+    }, true);
+  })();
+</script>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          ink: '#142D39',
+          sage: { 50:'#F3FAF8', 100:'#E3F4F0', 200:'#C5E7E0', 300:'#98D3C9', 400:'#5FB7AB', 500:'#2F978C', 600:'#0F766E', 700:'#0E615B', 800:'#104E4A', 900:'#123F3D' }
+        },
+        fontFamily: {
+          display: ['Fraunces', 'Georgia', 'serif'],
+          sans: ['Manrope', 'system-ui', '-apple-system', 'Segoe UI', 'sans-serif']
+        },
+        boxShadow: { soft: '0 28px 60px -32px rgba(20,45,57,.38)' }
+      }
+    }
+  };
+</script>
+<script src="https://unpkg.com/lucide@0.453.0/dist/umd/lucide.min.js"></script>
+
+<style>
+  html { scroll-behavior: smooth; scroll-padding-top: 88px; }
+  body { font-family: 'Manrope', system-ui, sans-serif; color: #142D39; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+  [hidden] { display: none !important; }
+  html:has(dialog[open]) { overflow: hidden; }
+  ::selection { background: #C5E7E0; color: #142D39; }
+
+  :focus-visible { outline: 2px solid #0F766E; outline-offset: 3px; border-radius: 6px; }
+  .on-dark :focus-visible { outline-color: #C5E7E0; }
+
+  /* Typography helpers */
+  .eyebrow { display: inline-flex; align-items: center; gap: .75rem; font-size: .72rem; font-weight: 700; letter-spacing: .24em; text-transform: uppercase; color: #0F766E; }
+  .eyebrow::before { content: ""; width: 2rem; height: 1px; background: currentColor; opacity: .6; }
+  .on-dark .eyebrow { color: #98D3C9; }
+  .h2 { font-family: 'Fraunces', Georgia, serif; font-weight: 500; letter-spacing: -.015em; line-height: 1.08; font-size: clamp(2rem, 4.2vw, 3.25rem); }
+
+  /* Buttons */
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: .55rem; border-radius: 999px; padding: .85rem 1.5rem; font-weight: 600; font-size: .925rem; line-height: 1; white-space: nowrap; transition: background-color .25s, color .25s, transform .25s, box-shadow .25s, border-color .25s; }
+  .btn:hover { transform: translateY(-1px); }
+  .btn-primary { background: #0F766E; color: #fff; box-shadow: 0 14px 28px -14px rgba(15,118,110,.75); }
+  .btn-primary:hover { background: #0E615B; }
+  .btn-light { background: #fff; color: #142D39; box-shadow: 0 14px 30px -16px rgba(0,0,0,.5); }
+  .btn-light:hover { background: #E3F4F0; }
+  .btn-outline-light { border: 1px solid rgba(255,255,255,.45); color: #fff; }
+  .btn-outline-light:hover { background: rgba(255,255,255,.1); border-color: #fff; }
+  .btn-ghost { border: 1px solid rgba(20,45,57,.16); color: #142D39; }
+  .btn-ghost:hover { border-color: #0F766E; color: #0F766E; }
+
+  /* Nav */
+  .nav-link { display: block; padding: .55rem .8rem; border-radius: 999px; font-size: .875rem; font-weight: 500; color: rgba(20,45,57,.76); transition: color .2s, background-color .2s; }
+  .nav-link:hover { color: #0F766E; background: #F3FAF8; }
+  .nav-link[aria-current="true"] { color: #0F766E; background: #E3F4F0; }
+  .m-link { display: flex; align-items: center; justify-content: space-between; padding: .95rem .25rem; font-family: 'Fraunces', serif; font-size: 1.2rem; border-bottom: 1px solid rgba(20,45,57,.08); }
+  .m-link[aria-current="true"] { color: #0F766E; }
+  #site-header.scrolled { border-color: rgba(20,45,57,.08); box-shadow: 0 10px 30px -22px rgba(20,45,57,.5); }
+  #mobile-menu { animation: drop .28s ease; }
+  @keyframes drop { from { opacity: 0; transform: translateY(-8px); } to { opacity: 1; transform: none; } }
+
+  /* Monochrome photo treatment: greyscale photo + single-hue tint */
+  .tone { overflow: hidden; isolation: isolate; background: #C5E7E0; }
+  .tone img { filter: grayscale(1) contrast(1.04) brightness(1.04); }
+  .tone::after { content: ""; position: absolute; inset: 0; background: #0F766E; mix-blend-mode: color; opacity: .6; pointer-events: none; }
+
+  /* Reveal on scroll */
+  .js .reveal { opacity: 0; transform: translateY(26px); transition: opacity .9s cubic-bezier(.2,.7,.2,1), transform .9s cubic-bezier(.2,.7,.2,1); transition-delay: var(--d, 0ms); }
+  .js .reveal.in { opacity: 1; transform: none; }
+
+  /* FAQ */
+  .faq-panel { display: grid; grid-template-rows: 0fr; transition: grid-template-rows .38s ease; }
+  .faq-panel > div { overflow: hidden; visibility: hidden; transition: visibility .38s; }
+  .faq-panel.open { grid-template-rows: 1fr; }
+  .faq-panel.open > div { visibility: visible; }
+  .faq-icon { transition: transform .3s, background-color .3s, color .3s, border-color .3s; }
+  .faq-btn[aria-expanded="true"] .faq-icon { transform: rotate(45deg); background: #0F766E; color: #fff; border-color: #0F766E; }
+
+  /* Form */
+  .label { display: block; font-size: .8rem; font-weight: 600; color: #142D39; margin-bottom: .45rem; }
+  .input { width: 100%; border-radius: 14px; border: 1px solid rgba(20,45,57,.16); background: #fff; padding: .8rem 1rem; font-size: .95rem; color: #142D39; transition: border-color .2s, box-shadow .2s; }
+  .input::placeholder { color: rgba(20,45,57,.4); }
+  .input:hover { border-color: rgba(15,118,110,.5); }
+  .input:focus { outline: none; border-color: #0F766E; box-shadow: 0 0 0 4px rgba(15,118,110,.14); }
+  .input[aria-invalid="true"] { border-color: #A4343A; box-shadow: 0 0 0 4px rgba(164,52,58,.1); }
+  .err { margin-top: .4rem; font-size: .8rem; font-weight: 500; color: #A4343A; display: flex; align-items: center; gap: .35rem; }
+
+  /* Dialogs */
+  dialog::backdrop { background: rgba(20,45,57,.6); backdrop-filter: blur(5px); }
+  #lightbox::backdrop { background: rgba(11,26,33,.94); }
+  dialog[open] { animation: pop .3s cubic-bezier(.2,.7,.2,1); }
+  @keyframes pop { from { opacity: 0; transform: translateY(12px) scale(.985); } to { opacity: 1; transform: none; } }
+
+  .toast { animation: toastIn .4s cubic-bezier(.2,.7,.2,1); }
+  @keyframes toastIn { from { opacity: 0; transform: translateY(-10px); } to { opacity: 1; transform: none; } }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .js .reveal { opacity: 1; transform: none; transition: none; }
+    *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+  }
+</style>
+</head>
+
+<body class="bg-white">
+<a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[70] focus:bg-white focus:text-ink focus:px-4 focus:py-2 focus:rounded-full focus:shadow-soft">Skip to main content</a>
+
+<!-- ============ HEADER ============ -->
+<header id="site-header" class="sticky top-0 z-40 bg-white/90 backdrop-blur-md border-b border-transparent transition-shadow duration-300">
+  <nav aria-label="Primary" class="max-w-7xl mx-auto px-5 sm:px-8 h-[72px] flex items-center justify-between gap-4">
+    <a href="#home" class="flex items-center gap-2.5 shrink-0" aria-label="Sage Dental Care, back to top">
+      <span class="grid place-items-center w-10 h-10 rounded-2xl bg-sage-600 text-white">
+        <svg viewBox="0 0 24 24" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><path d="M12 5.5c-1.5-1.2-3-1.8-4.5-1.5C5 4.4 3.8 6.6 4 9c.2 2.2 1 3.6 1.5 5.5.5 2 .6 5.5 2.2 5.5 1.6 0 1.5-2.6 2-4.2.3-1 .9-1.6 2.3-1.6s2 .6 2.3 1.6c.5 1.6.4 4.2 2 4.2 1.6 0 1.7-3.5 2.2-5.5.5-1.9 1.3-3.3 1.5-5.5.2-2.4-1-4.6-3.5-5-1.5-.3-3 .3-4.5 1.5z"/></svg>
+      </span>
+      <span class="leading-none">
+        <span class="block font-display text-[1.35rem] font-medium text-ink">Sage</span>
+        <span class="block text-[10px] font-semibold tracking-[.3em] uppercase text-sage-600 mt-1">Dental Care</span>
+      </span>
+    </a>
+
+    <ul id="nav-desktop" class="hidden xl:flex items-center gap-0.5"></ul>
+
+    <div class="flex items-center gap-2.5">
+      <a href="#book" class="btn btn-primary hidden sm:inline-flex">
+        <i data-lucide="calendar-check" class="w-4 h-4" aria-hidden="true"></i> Book Appointment
+      </a>
+      <button id="menu-btn" type="button" class="xl:hidden grid place-items-center w-11 h-11 rounded-full border border-ink/15 text-ink hover:border-sage-600 hover:text-sage-600 transition" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open navigation menu">
+        <span data-icon="open"><i data-lucide="menu" class="w-5 h-5" aria-hidden="true"></i></span>
+        <span data-icon="close" hidden><i data-lucide="x" class="w-5 h-5" aria-hidden="true"></i></span>
+      </button>
+    </div>
+  </nav>
+
+  <div id="mobile-menu" class="xl:hidden absolute inset-x-0 top-full bg-white border-t border-ink/10 shadow-soft max-h-[calc(100vh-72px)] overflow-y-auto" hidden>
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 pt-2 pb-7">
+      <ul id="nav-mobile"></ul>
+      <a href="#book" class="btn btn-primary w-full mt-6" data-close-menu>
+        <i data-lucide="calendar-check" class="w-4 h-4" aria-hidden="true"></i> Book Appointment
+      </a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ============ HERO ============ -->
+<section id="home" class="relative isolate overflow-hidden on-dark" aria-labelledby="hero-title">
+  <div class="absolute inset-0 -z-10 tone">
+    <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1900&q=70" alt="Bright, modern dental treatment room" class="w-full h-full object-cover" fetchpriority="high" decoding="async">
+  </div>
+  <div class="absolute inset-0 -z-10 bg-gradient-to-r from-ink via-ink/85 to-ink/35"></div>
+  <div class="absolute inset-0 -z-10 bg-gradient-to-t from-ink/70 via-transparent to-transparent"></div>
+
+  <div class="max-w-7xl mx-auto px-5 sm:px-8 pt-20 pb-36 sm:pt-28 sm:pb-44 lg:pt-36 lg:pb-52">
+    <div class="max-w-2xl">
+      <p class="reveal eyebrow">Gentle, modern dentistry</p>
+      <h1 id="hero-title" class="reveal mt-6 font-display font-medium text-white tracking-tight leading-[1.02] text-[2.7rem] sm:text-6xl lg:text-7xl" style="--d:80ms">
+        Your Smile Deserves <em class="italic font-normal text-sage-200">Exceptional</em> Care
+      </h1>
+      <p class="reveal mt-6 text-base sm:text-lg leading-relaxed text-white/80 max-w-xl" style="--d:160ms">
+        Welcome to Sage Dental Care, a calm, friendly clinic where we take the time to listen, explain your options in plain language and help you feel at ease from the moment you arrive.
+      </p>
+      <div class="reveal mt-9 flex flex-col sm:flex-row gap-3" style="--d:240ms">
+        <a href="#book" class="btn btn-light"><i data-lucide="calendar-check" class="w-4 h-4" aria-hidden="true"></i> Book Appointment</a>
+        <a href="#services" class="btn btn-outline-light">Explore Services <i data-lucide="arrow-right" class="w-4 h-4" aria-hidden="true"></i></a>
+      </div>
+      <ul class="reveal mt-12 grid sm:grid-cols-3 gap-x-6 gap-y-3 text-sm text-white/85 max-w-xl" style="--d:320ms">
+        <li class="flex items-start gap-2.5"><i data-lucide="check" class="w-4 h-4 mt-0.5 text-sage-300 shrink-0" aria-hidden="true"></i> Unhurried appointments</li>
+        <li class="flex items-start gap-2.5"><i data-lucide="check" class="w-4 h-4 mt-0.5 text-sage-300 shrink-0" aria-hidden="true"></i> Options explained clearly</li>
+        <li class="flex items-start gap-2.5"><i data-lucide="check" class="w-4 h-4 mt-0.5 text-sage-300 shrink-0" aria-hidden="true"></i> A calm, comfortable space</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- Appointment CTA strip -->
+<section aria-label="Quick appointment information" class="relative z-10 -mt-20 sm:-mt-24">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8">
+    <div class="reveal bg-white rounded-[2rem] shadow-soft border border-ink/5 p-6 sm:p-8 grid gap-6 md:grid-cols-3 lg:grid-cols-[1fr_1fr_1fr_auto] lg:items-center">
+      <div class="flex items-start gap-4">
+        <span class="grid place-items-center w-11 h-11 rounded-2xl bg-sage-100 text-sage-600 shrink-0"><i data-lucide="clock" class="w-5 h-5" aria-hidden="true"></i></span>
+        <div><p class="text-xs font-semibold uppercase tracking-widest text-sage-600">Sample hours</p><p class="mt-1 text-sm text-ink/80 leading-relaxed">Mon–Fri 9:00 am – 6:00 pm<br>Sat 9:00 am – 2:00 pm</p></div>
+      </div>
+      <div class="flex items-start gap-4">
+        <span class="grid place-items-center w-11 h-11 rounded-2xl bg-sage-100 text-sage-600 shrink-0"><i data-lucide="phone" class="w-5 h-5" aria-hidden="true"></i></span>
+        <div><p class="text-xs font-semibold uppercase tracking-widest text-sage-600">Call us</p><p class="mt-1 text-sm text-ink/80 leading-relaxed"><a href="tel:+15550100199" class="hover:text-sage-600 underline-offset-4 hover:underline">(555) 010-0199</a><br><span class="text-ink/55">Placeholder number</span></p></div>
+      </div>
+      <div class="flex items-start gap-4">
+        <span class="grid place-items-center w-11 h-11 rounded-2xl bg-sage-100 text-sage-600 shrink-0"><i data-lucide="map-pin" class="w-5 h-5" aria-hidden="true"></i></span>
+        <div><p class="text-xs font-semibold uppercase tracking-widest text-sage-600">Visit us</p><p class="mt-1 text-sm text-ink/80 leading-relaxed">123 Example Street, Suite 100<br>Sample City, ST 00000</p></div>
+      </div>
+      <a href="#book" class="btn btn-primary md:col-span-3 lg:col-span-1">Request a visit <i data-lucide="arrow-right" class="w-4 h-4" aria-hidden="true"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section id="about" class="py-24 sm:py-32" aria-labelledby="about-title">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-14 lg:gap-20 items-center">
+    <div class="reveal relative pb-10 pr-6 sm:pr-14">
+      <div class="relative tone rounded-[2rem] aspect-[4/5]">
+        <img src="https://images.unsplash.com/photo-1588776813677-77aaf5595b83?auto=format&fit=crop&w=1000&q=70" alt="Dentist caring for a patient in a treatment room" class="absolute inset-0 w-full h-full object-cover" loading="lazy" decoding="async" width="1000" height="1250">
+      </div>
+      <div class="absolute bottom-0 right-0 w-[46%] rounded-[1.5rem] border-[6px] border-white shadow-soft overflow-hidden">
+        <div class="relative tone aspect-square">
+          <img src="https://images.unsplash.com/photo-1600170311833-c2cf5280ce49?auto=format&fit=crop&w=600&q=70" alt="Close-up detail from the dental clinic" class="absolute inset-0 w-full h-full object-cover" loading="lazy" decoding="async" width="600" height="600">
+        </div>
+      </div>
+      <div class="absolute top-6 -left-2 sm:-left-5 bg-white rounded-2xl shadow-soft border border-ink/5 px-5 py-4 max-w-[13rem]">
+        <i data-lucide="leaf" class="w-5 h-5 text-sage-600" aria-hidden="true"></i>
+        <p class="mt-2 font-display text-lg leading-snug text-ink">Listen first.<br>Treat second.</p>
+      </div>
+    </div>
+
+    <div>
+      <p class="reveal eyebrow">About Us</p>
+      <h2 id="about-title" class="reveal h2 mt-5 text-ink" style="--d:60ms">A calmer, clearer kind of dental visit</h2>
+      <p class="reveal mt-6 text-ink/70 leading-relaxed" style="--d:120ms">
+        Sage Dental Care began with a simple idea: going to the dentist should feel reassuring, not rushed. Our clinic is designed around quiet rooms, honest conversations and care that moves at your pace.
+      </p>
+      <p class="reveal mt-4 text-ink/70 leading-relaxed" style="--d:160ms">
+        Whether you are visiting for a routine check-up or have been putting off treatment for a while, you will be welcomed without judgement and given the information you need to decide what is right for you.
+      </p>
+
+      <div class="mt-9 grid sm:grid-cols-2 gap-4">
+        <article class="reveal rounded-3xl bg-sage-50 border border-sage-100 p-6" style="--d:200ms">
+          <span class="grid place-items-center w-10 h-10 rounded-xl bg-white text-sage-600"><i data-lucide="target" class="w-5 h-5" aria-hidden="true"></i></span>
+          <h3 class="mt-4 font-display text-xl text-ink">Our mission</h3>
+          <p class="mt-2 text-sm text-ink/70 leading-relaxed">To make good dental care feel approachable, with clear guidance, gentle treatment and respect for your time.</p>
+        </article>
+        <article class="reveal rounded-3xl bg-sage-50 border border-sage-100 p-6" style="--d:260ms">
+          <span class="grid place-items-center w-10 h-10 rounded-xl bg-white text-sage-600"><i data-lucide="heart" class="w-5 h-5" aria-hidden="true"></i></span>
+          <h3 class="mt-4 font-display text-xl text-ink">Patient-focused philosophy</h3>
+          <p class="mt-2 text-sm text-ink/70 leading-relaxed">You are a partner in your care. We explain what we see, talk through options and never pressure a decision.</p>
+        </article>
+      </div>
+
+      <p class="reveal mt-6 text-xs text-ink/50" style="--d:300ms">Sample clinic story written for this demo brand.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section id="services" class="py-24 sm:py-32 bg-sage-50" aria-labelledby="services-title">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8">
+    <div class="grid lg:grid-cols-2 gap-6 lg:gap-20 items-end">
+      <div>
+        <p class="reveal eyebrow">Our Services</p>
+        <h2 id="services-title" class="reveal h2 mt-5 text-ink" style="--d:60ms">Dental care for every stage of your smile</h2>
+      </div>
+      <p class="reveal text-ink/70 leading-relaxed lg:pb-2" style="--d:120ms">
+        From routine check-ups to more involved treatment, each service starts with a conversation about your needs. Select any treatment to learn more about what a visit may involve.
+      </p>
+    </div>
+    <div id="services-grid" class="mt-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-5"></div>
+  </div>
+</section>
+
+<!-- ============ WHY CHOOSE US ============ -->
+<section id="why" class="py-24 sm:py-32 bg-ink text-white on-dark relative overflow-hidden" aria-labelledby="why-title">
+  <div class="absolute -top-40 -right-40 w-[34rem] h-[34rem] rounded-full bg-sage-600/20 blur-3xl" aria-hidden="true"></div>
+  <div class="relative max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-[.9fr_1.1fr] gap-14 lg:gap-20 items-center">
+    <div>
+      <p class="reveal eyebrow">Why Choose Us</p>
+      <h2 id="why-title" class="reveal h2 mt-5" style="--d:60ms">Care that feels considered, from hello to follow-up</h2>
+      <p class="reveal mt-6 text-white/70 leading-relaxed" style="--d:120ms">
+        We focus on the details that make a visit feel easier: being heard, knowing what to expect and feeling comfortable in the chair.
+      </p>
+      <div class="reveal mt-10 relative tone rounded-[2rem] aspect-[16/10]" style="--d:180ms">
+        <img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=1000&q=70" alt="Dentist talking with a patient during a visit" class="absolute inset-0 w-full h-full object-cover" loading="lazy" decoding="async" width="1000" height="625">
+      </div>
+    </div>
+    <div id="why-grid" class="grid sm:grid-cols-2 gap-5"></div>
+  </div>
+</section>
+
+<!-- ============ DENTISTS ============ -->
+<section id="dentists" class="py-24 sm:py-32" aria-labelledby="dentists-title">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8">
+    <div class="max-w-2xl">
+      <p class="reveal eyebrow">Our Dentists</p>
+      <h2 id="dentists-title" class="reveal h2 mt-5 text-ink" style="--d:60ms">Meet the people behind your care</h2>
+      <p class="reveal mt-6 text-ink/70 leading-relaxed" style="--d:120ms">
+        The profiles below are placeholders. Names are sample names, photographs are stock images and biographies are example text for this demo.
+      </p>
+    </div>
+    <div id="dentists-grid" class="mt-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-6"></div>
+  </div>
+</section>
+
+<!-- ============ TREATMENT JOURNEY ============ -->
+<section id="journey" class="py-24 sm:py-32 bg-sage-50" aria-labelledby="journey-title">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8">
+    <div class="max-w-2xl lg:mx-auto lg:text-center">
+      <p class="reveal eyebrow">Treatment Journey</p>
+      <h2 id="journey-title" class="reveal h2 mt-5 text-ink" style="--d:60ms">Four clear steps, no surprises</h2>
+      <p class="reveal mt-6 text-ink/70 leading-relaxed" style="--d:120ms">Every patient is different, but a typical path through care at Sage Dental Care looks like this.</p>
+    </div>
+    <div class="relative mt-16">
+      <div class="hidden lg:block absolute top-8 left-[12.5%] right-[12.5%] h-px bg-sage-300" aria-hidden="true"></div>
+      <ol id="journey-grid" class="grid gap-10 lg:grid-cols-4 lg:gap-8"></ol>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALLERY ============ -->
+<section id="gallery" class="py-24 sm:py-32" aria-labelledby="gallery-title">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8">
+    <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
+      <div class="max-w-xl">
+        <p class="reveal eyebrow">Clinic Gallery</p>
+        <h2 id="gallery-title" class="reveal h2 mt-5 text-ink" style="--d:60ms">A look inside the clinic</h2>
+      </div>
+      <p class="reveal text-sm text-ink/60 max-w-xs" style="--d:120ms">Select any image to view it larger. Representative stock photography used for this demo.</p>
+    </div>
+    <ul id="gallery-grid" class="mt-12 grid grid-cols-2 md:grid-cols-4 auto-rows-[150px] sm:auto-rows-[190px] lg:auto-rows-[230px] gap-3 sm:gap-4"></ul>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section id="testimonials" class="py-24 sm:py-32 bg-sage-50" aria-labelledby="testimonials-title">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8">
+    <div class="max-w-2xl">
+      <p class="reveal eyebrow">Patient Feedback</p>
+      <h2 id="testimonials-title" class="reveal h2 mt-5 text-ink" style="--d:60ms">What a great visit could sound like</h2>
+      <div class="reveal mt-6 flex items-start gap-3 rounded-2xl border border-sage-200 bg-white px-5 py-4 text-sm text-ink/75" style="--d:120ms">
+        <i data-lucide="info" class="w-4 h-4 mt-0.5 text-sage-600 shrink-0" aria-hidden="true"></i>
+        <p><strong class="font-semibold text-ink">Example content only.</strong> The feedback below is fictional and was written to demonstrate this layout. It does not come from real patients and is not a verified review.</p>
+      </div>
+    </div>
+    <div id="testimonials-grid" class="mt-12 grid md:grid-cols-3 gap-6"></div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section id="faq" class="py-24 sm:py-32" aria-labelledby="faq-title">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-[.8fr_1.2fr] gap-12 lg:gap-20">
+    <div class="lg:sticky lg:top-28 self-start">
+      <p class="reveal eyebrow">FAQ</p>
+      <h2 id="faq-title" class="reveal h2 mt-5 text-ink" style="--d:60ms">Questions, answered simply</h2>
+      <p class="reveal mt-6 text-ink/70 leading-relaxed" style="--d:120ms">Can't find what you are looking for? Reach out and our front desk will be glad to help.</p>
+      <a href="#contact" class="reveal btn btn-ghost mt-8" style="--d:180ms">Contact Us <i data-lucide="arrow-right" class="w-4 h-4" aria-hidden="true"></i></a>
+    </div>
+    <div id="faq-list" class="reveal border-t border-ink/10"></div>
+  </div>
+</section>
+
+<!-- ============ BOOK APPOINTMENT ============ -->
+<section id="book" class="pb-24 sm:pb-32" aria-labelledby="book-title">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8">
+    <div class="relative overflow-hidden rounded-[2.25rem] bg-ink text-white">
+      <div class="absolute -bottom-48 -left-32 w-[32rem] h-[32rem] rounded-full bg-sage-600/25 blur-3xl" aria-hidden="true"></div>
+      <div class="relative grid lg:grid-cols-[.85fr_1.15fr] gap-10 lg:gap-14 p-6 sm:p-10 lg:p-14">
+        <div class="on-dark lg:py-4">
+          <p class="reveal eyebrow">Book Appointment</p>
+          <h2 id="book-title" class="reveal h2 mt-5" style="--d:60ms">Request a time that suits you</h2>
+          <p class="reveal mt-6 text-white/70 leading-relaxed" style="--d:120ms">Share a few details and your preferred time. In a live clinic website, the front desk would follow up to confirm your visit.</p>
+          <ul class="reveal mt-9 space-y-4 text-sm text-white/85" style="--d:180ms">
+            <li class="flex items-start gap-3"><span class="grid place-items-center w-7 h-7 rounded-full bg-white/10 shrink-0"><i data-lucide="check" class="w-3.5 h-3.5 text-sage-200" aria-hidden="true"></i></span> Takes about a minute to complete</li>
+            <li class="flex items-start gap-3"><span class="grid place-items-center w-7 h-7 rounded-full bg-white/10 shrink-0"><i data-lucide="check" class="w-3.5 h-3.5 text-sage-200" aria-hidden="true"></i></span> Tell us anything that helps you feel comfortable</li>
+            <li class="flex items-start gap-3"><span class="grid place-items-center w-7 h-7 rounded-full bg-white/10 shrink-0"><i data-lucide="check" class="w-3.5 h-3.5 text-sage-200" aria-hidden="true"></i></span> Prefer to talk? Call <a href="tel:+15550100199" class="underline underline-offset-4 hover:text-white">(555) 010-0199</a></li>
+          </ul>
+          <div class="reveal mt-10 rounded-2xl border border-white/15 bg-white/5 px-5 py-4 text-sm text-white/75 flex items-start gap-3" style="--d:240ms">
+            <i data-lucide="info" class="w-4 h-4 mt-0.5 text-sage-300 shrink-0" aria-hidden="true"></i>
+            <p>This is a demo form. Submissions are not sent anywhere and no real appointment will be booked.</p>
+          </div>
+        </div>
+
+        <div class="reveal bg-white text-ink rounded-[1.75rem] p-6 sm:p-9 shadow-soft" style="--d:120ms">
+          <div id="form-success" class="mb-6 rounded-2xl bg-sage-50 border border-sage-200 p-5" tabindex="-1" hidden>
+            <div class="flex items-start gap-3">
+              <span class="grid place-items-center w-9 h-9 rounded-full bg-sage-600 text-white shrink-0"><i data-lucide="check" class="w-4 h-4" aria-hidden="true"></i></span>
+              <div>
+                <p class="font-display text-lg text-ink">Thank you. Your demo request was received.</p>
+                <p id="form-success-text" class="mt-1 text-sm text-ink/70 leading-relaxed"></p>
+              </div>
+            </div>
+          </div>
+
+          <form id="book-form" novalidate aria-label="Appointment request form">
+            <div class="grid sm:grid-cols-2 gap-5">
+              <div>
+                <label for="f-name" class="label">Full name <span class="text-sage-600" aria-hidden="true">*</span></label>
+                <input id="f-name" name="name" type="text" autocomplete="name" required class="input" placeholder="Jane Sample" aria-describedby="e-name">
+                <p id="e-name" class="err" hidden></p>
+              </div>
+              <div>
+                <label for="f-phone" class="label">Phone number <span class="text-sage-600" aria-hidden="true">*</span></label>
+                <input id="f-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required class="input" placeholder="(555) 010-0000" aria-describedby="e-phone">
+                <p id="e-phone" class="err" hidden></p>
+              </div>
+              <div class="sm:col-span-2">
+                <label for="f-service" class="label">Service <span class="text-sage-600" aria-hidden="true">*</span></label>
+                <select id="f-service" name="service" required class="input" aria-describedby="e-service">
+                  <option value="">Select a service</option>
+                </select>
+                <p id="e-service" class="err" hidden></p>
+              </div>
+              <div>
+                <label for="f-date" class="label">Preferred date <span class="text-sage-600" aria-hidden="true">*</span></label>
+                <input id="f-date" name="date" type="date" required class="input" aria-describedby="e-date">
+                <p id="e-date" class="err" hidden></p>
+              </div>
+              <div>
+                <label for="f-time" class="label">Preferred time <span class="text-sage-600" aria-hidden="true">*</span></label>
+                <select id="f-time" name="time" required class="input" aria-describedby="e-time">
+                  <option value="">Select a time</option>
+                </select>
+                <p id="e-time" class="err" hidden></p>
+              </div>
+              <div class="sm:col-span-2">
+                <label for="f-notes" class="label">Notes <span class="font-normal text-ink/50">(optional)</span></label>
+                <textarea id="f-notes" name="notes" rows="4" maxlength="500" class="input resize-y" placeholder="Anything we should know before your visit?" aria-describedby="e-notes notes-count"></textarea>
+                <div class="flex justify-between gap-4">
+                  <p id="e-notes" class="err" hidden></p>
+                  <p id="notes-count" class="ml-auto mt-1.5 text-xs text-ink/45">0 / 500</p>
+                </div>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary w-full mt-6 !py-4">
+              <i data-lucide="calendar-check" class="w-4 h-4" aria-hidden="true"></i> Request Appointment
+            </button>
+            <p class="mt-4 text-xs text-ink/50 text-center">Fields marked * are required. Demo only: nothing you enter is stored or sent.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact" class="py-24 sm:py-32 bg-sage-50" aria-labelledby="contact-title">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8">
+    <div class="max-w-2xl">
+      <p class="reveal eyebrow">Contact Us</p>
+      <h2 id="contact-title" class="reveal h2 mt-5 text-ink" style="--d:60ms">We would love to hear from you</h2>
+      <p class="reveal mt-6 text-ink/70 leading-relaxed" style="--d:120ms">All contact details below are placeholders for this demo website.</p>
+    </div>
+
+    <div class="mt-14 grid lg:grid-cols-[.9fr_1.1fr] gap-6">
+      <div class="grid sm:grid-cols-2 gap-5 content-start">
+        <article class="reveal bg-white rounded-3xl p-6 border border-ink/5">
+          <span class="grid place-items-center w-11 h-11 rounded-2xl bg-sage-100 text-sage-600"><i data-lucide="map-pin" class="w-5 h-5" aria-hidden="true"></i></span>
+          <h3 class="mt-5 font-display text-xl text-ink">Address</h3>
+          <address class="mt-2 not-italic text-sm text-ink/70 leading-relaxed">123 Example Street, Suite 100<br>Sample City, ST 00000</address>
+        </article>
+        <article class="reveal bg-white rounded-3xl p-6 border border-ink/5" style="--d:60ms">
+          <span class="grid place-items-center w-11 h-11 rounded-2xl bg-sage-100 text-sage-600"><i data-lucide="phone" class="w-5 h-5" aria-hidden="true"></i></span>
+          <h3 class="mt-5 font-display text-xl text-ink">Phone</h3>
+          <p class="mt-2 text-sm text-ink/70 leading-relaxed"><a href="tel:+15550100199" class="hover:text-sage-600 hover:underline underline-offset-4">(555) 010-0199</a><br><a href="#" data-wa target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-sage-600 font-semibold hover:underline underline-offset-4">Chat on WhatsApp <i data-lucide="arrow-up-right" class="w-3.5 h-3.5" aria-hidden="true"></i></a></p>
+        </article>
+        <article class="reveal bg-white rounded-3xl p-6 border border-ink/5" style="--d:120ms">
+          <span class="grid place-items-center w-11 h-11 rounded-2xl bg-sage-100 text-sage-600"><i data-lucide="mail" class="w-5 h-5" aria-hidden="true"></i></span>
+          <h3 class="mt-5 font-display text-xl text-ink">Email</h3>
+          <p class="mt-2 text-sm text-ink/70 leading-relaxed break-words"><a href="mailto:hello@sagedentalcare.example" class="hover:text-sage-600 hover:underline underline-offset-4">hello@sagedentalcare.example</a></p>
+        </article>
+        <article class="reveal bg-white rounded-3xl p-6 border border-ink/5" style="--d:180ms">
+          <span class="grid place-items-center w-11 h-11 rounded-2xl bg-sage-100 text-sage-600"><i data-lucide="clock" class="w-5 h-5" aria-hidden="true"></i></span>
+          <h3 class="mt-5 font-display text-xl text-ink">Business hours</h3>
+          <dl class="mt-2 text-sm text-ink/70 space-y-1.5">
+            <div class="flex justify-between gap-4"><dt>Mon – Fri</dt><dd class="text-ink/90">9:00 am – 6:00 pm</dd></div>
+            <div class="flex justify-between gap-4"><dt>Saturday</dt><dd class="text-ink/90">9:00 am – 2:00 pm</dd></div>
+            <div class="flex justify-between gap-4"><dt>Sunday</dt><dd class="text-ink/90">Closed</dd></div>
+          </dl>
+        </article>
+      </div>
+
+      <!-- Map embed placeholder: replace this block with a Google Maps <iframe> -->
+      <div class="reveal relative rounded-[2rem] overflow-hidden min-h-[340px] lg:min-h-full border border-sage-200" role="img" aria-label="Map placeholder showing the sample clinic location" style="--d:120ms">
+        <svg class="absolute inset-0 w-full h-full" viewBox="0 0 600 440" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+          <rect width="600" height="440" fill="#E3F4F0"/>
+          <path d="M-20 250 C140 200 300 300 620 215" stroke="#C5E7E0" stroke-width="34" fill="none"/>
+          <g fill="#C5E7E0" opacity=".65">
+            <rect x="40" y="36" width="84" height="56" rx="10"/><rect x="232" y="20" width="120" height="64" rx="10"/>
+            <rect x="452" y="110" width="110" height="60" rx="10"/><rect x="52" y="318" width="100" height="74" rx="10"/>
+            <rect x="244" y="330" width="96" height="62" rx="10"/><rect x="448" y="300" width="112" height="88" rx="10"/>
+          </g>
+          <g stroke="#fff" stroke-linecap="round" fill="none">
+            <path d="M-20 122 L620 92" stroke-width="14"/><path d="M-20 300 L620 410" stroke-width="12"/>
+            <path d="M176 -20 L208 460" stroke-width="14"/><path d="M404 -20 L384 460" stroke-width="12"/>
+            <path d="M-20 196 L620 160" stroke-width="5"/><path d="M90 -20 L70 460" stroke-width="5"/>
+            <path d="M510 -20 L530 460" stroke-width="5"/><path d="M290 -20 L300 460" stroke-width="5"/>
+          </g>
+        </svg>
+        <div class="absolute inset-0 grid place-items-center">
+          <div class="relative -mt-12">
+            <span class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-20 h-20 rounded-full bg-sage-600/15 motion-safe:animate-ping" aria-hidden="true"></span>
+            <span class="relative grid place-items-center w-14 h-14 rounded-full bg-sage-600 text-white shadow-soft"><i data-lucide="map-pin" class="w-6 h-6" aria-hidden="true"></i></span>
+          </div>
+        </div>
+        <div class="absolute left-4 right-4 bottom-4 sm:left-6 sm:right-auto sm:bottom-6 bg-white/95 backdrop-blur rounded-2xl px-5 py-4 shadow-soft max-w-sm">
+          <p class="text-xs font-semibold uppercase tracking-widest text-sage-600">Map embed placeholder</p>
+          <p class="mt-1 text-sm text-ink/70 leading-relaxed">Replace this panel with a Google Maps embed for the clinic's real address.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="bg-ink text-white on-dark">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8 pt-20 pb-10">
+    <div class="grid gap-12 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1.2fr]">
+      <div>
+        <a href="#home" class="inline-flex items-center gap-2.5" aria-label="Sage Dental Care, back to top">
+          <span class="grid place-items-center w-10 h-10 rounded-2xl bg-sage-600 text-white">
+            <svg viewBox="0 0 24 24" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><path d="M12 5.5c-1.5-1.2-3-1.8-4.5-1.5C5 4.4 3.8 6.6 4 9c.2 2.2 1 3.6 1.5 5.5.5 2 .6 5.5 2.2 5.5 1.6 0 1.5-2.6 2-4.2.3-1 .9-1.6 2.3-1.6s2 .6 2.3 1.6c.5 1.6.4 4.2 2 4.2 1.6 0 1.7-3.5 2.2-5.5.5-1.9 1.3-3.3 1.5-5.5.2-2.4-1-4.6-3.5-5-1.5-.3-3 .3-4.5 1.5z"/></svg>
+          </span>
+          <span class="leading-none">
+            <span class="block font-display text-[1.35rem] font-medium">Sage</span>
+            <span class="block text-[10px] font-semibold tracking-[.3em] uppercase text-sage-300 mt-1">Dental Care</span>
+          </span>
+        </a>
+        <p class="mt-6 text-sm text-white/65 leading-relaxed max-w-xs">A calm, patient-focused dental clinic offering clear guidance and gentle care. Sage Dental Care is a fictional demo brand.</p>
+        <ul class="mt-7 flex items-center gap-2.5" aria-label="Social links">
+          <li><a href="#" data-placeholder aria-label="Instagram (placeholder link)" class="grid place-items-center w-10 h-10 rounded-full border border-white/15 text-white/80 hover:bg-white hover:text-ink transition"><i data-lucide="instagram" class="w-4 h-4" aria-hidden="true"></i></a></li>
+          <li><a href="#" data-placeholder aria-label="Facebook (placeholder link)" class="grid place-items-center w-10 h-10 rounded-full border border-white/15 text-white/80 hover:bg-white hover:text-ink transition"><i data-lucide="facebook" class="w-4 h-4" aria-hidden="true"></i></a></li>
+          <li><a href="#" data-placeholder aria-label="LinkedIn (placeholder link)" class="grid place-items-center w-10 h-10 rounded-full border border-white/15 text-white/80 hover:bg-white hover:text-ink transition"><i data-lucide="linkedin" class="w-4 h-4" aria-hidden="true"></i></a></li>
+          <li><a href="#" data-wa target="_blank" rel="noopener noreferrer" aria-label="WhatsApp (placeholder number)" class="grid place-items-center w-10 h-10 rounded-full border border-white/15 text-white/80 hover:bg-white hover:text-ink transition"><i data-lucide="message-circle" class="w-4 h-4" aria-hidden="true"></i></a></li>
+        </ul>
+      </div>
+
+      <nav aria-label="Quick links">
+        <h2 class="text-xs font-bold uppercase tracking-[.22em] text-sage-300">Quick Links</h2>
+        <ul id="footer-links" class="mt-5 space-y-3 text-sm text-white/70"></ul>
+      </nav>
+
+      <nav aria-label="Treatments">
+        <h2 class="text-xs font-bold uppercase tracking-[.22em] text-sage-300">Treatments</h2>
+        <ul id="footer-treatments" class="mt-5 space-y-3 text-sm text-white/70"></ul>
+      </nav>
+
+      <div>
+        <h2 class="text-xs font-bold uppercase tracking-[.22em] text-sage-300">Contact Information</h2>
+        <ul class="mt-5 space-y-4 text-sm text-white/70">
+          <li class="flex items-start gap-3"><i data-lucide="map-pin" class="w-4 h-4 mt-0.5 text-sage-300 shrink-0" aria-hidden="true"></i><span>123 Example Street, Suite 100<br>Sample City, ST 00000</span></li>
+          <li class="flex items-start gap-3"><i data-lucide="phone" class="w-4 h-4 mt-0.5 text-sage-300 shrink-0" aria-hidden="true"></i><a href="tel:+15550100199" class="hover:text-white">(555) 010-0199</a></li>
+          <li class="flex items-start gap-3"><i data-lucide="mail" class="w-4 h-4 mt-0.5 text-sage-300 shrink-0" aria-hidden="true"></i><a href="mailto:hello@sagedentalcare.example" class="hover:text-white break-all">hello@sagedentalcare.example</a></li>
+          <li class="flex items-start gap-3"><i data-lucide="clock" class="w-4 h-4 mt-0.5 text-sage-300 shrink-0" aria-hidden="true"></i><span>Mon–Fri 9–6 · Sat 9–2 · Sun closed</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row md:items-center md:justify-between gap-4 text-xs text-white/55">
+      <p>© <span id="year">2025</span> Sage Dental Care. Fictional demo brand. All rights reserved.</p>
+      <ul class="flex items-center gap-6">
+        <li><a href="#" data-placeholder class="hover:text-white">Privacy Policy</a></li>
+        <li><a href="#" data-placeholder class="hover:text-white">Terms</a></li>
+      </ul>
+    </div>
+    <p class="mt-6 text-[11px] text-white/35 text-center md:text-left">Demo website created by FlowFoundry AI Solutions</p>
+  </div>
+</footer>
+
+<!-- Floating WhatsApp button (number is configured in CONFIG below) -->
+<a href="#" data-wa target="_blank" rel="noopener noreferrer" aria-label="Chat with us on WhatsApp (demo placeholder number)" class="fixed z-30 bottom-5 right-5 inline-flex items-center gap-2.5 rounded-full bg-sage-600 text-white pl-4 pr-4 sm:pr-5 py-3.5 shadow-soft hover:bg-sage-700 hover:-translate-y-0.5 transition">
+  <i data-lucide="message-circle" class="w-5 h-5" aria-hidden="true"></i>
+  <span class="hidden sm:inline text-sm font-semibold">WhatsApp</span>
+</a>
+
+<!-- Toast region -->
+<div id="toast-region" class="fixed z-[60] top-24 inset-x-0 mx-auto sm:mx-0 sm:left-auto sm:right-6 w-[min(92vw,26rem)] space-y-3" role="status" aria-live="polite"></div>
+
+<!-- Service detail dialog -->
+<dialog id="service-dialog" class="rounded-[1.75rem] p-0 w-[min(92vw,34rem)] bg-white text-ink shadow-soft" aria-labelledby="sd-title">
+  <div class="p-7 sm:p-9">
+    <div class="flex items-start justify-between gap-4">
+      <span id="sd-icon" class="grid place-items-center w-12 h-12 rounded-2xl bg-sage-100 text-sage-600"></span>
+      <button type="button" data-dialog-close class="grid place-items-center w-10 h-10 rounded-full border border-ink/15 hover:border-sage-600 hover:text-sage-600 transition" aria-label="Close service details"><i data-lucide="x" class="w-4 h-4" aria-hidden="true"></i></button>
+    </div>
+    <h2 id="sd-title" class="mt-6 font-display text-3xl text-ink"></h2>
+    <p id="sd-detail" class="mt-3 text-ink/70 leading-relaxed"></p>
+    <h3 class="mt-7 text-xs font-bold uppercase tracking-[.22em] text-sage-600">What a visit may involve</h3>
+    <ul id="sd-points" class="mt-4 space-y-3 text-sm text-ink/80"></ul>
+    <p class="mt-6 text-xs text-ink/50 leading-relaxed">General information for demonstration only. It is not medical advice. A dentist would confirm what is suitable for you.</p>
+    <div class="mt-7 flex flex-col sm:flex-row gap-3">
+      <button type="button" id="sd-book" class="btn btn-primary flex-1"><i data-lucide="calendar-check" class="w-4 h-4" aria-hidden="true"></i> Book this service</button>
+      <button type="button" data-dialog-close class="btn btn-ghost">Close</button>
+    </div>
+  </div>
+</dialog>
+
+<!-- Lightbox dialog -->
+<dialog id="lightbox" class="on-dark bg-transparent text-white w-screen h-screen max-w-none max-h-none m-0 p-0" aria-label="Clinic gallery image viewer">
+  <div class="relative w-full h-full flex items-center justify-center px-4 py-20 sm:px-20" data-lb-backdrop>
+    <figure class="max-w-5xl w-full text-center">
+      <div class="relative tone rounded-2xl w-fit mx-auto">
+        <img id="lb-img" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" class="block max-h-[70vh] max-w-full w-auto">
+      </div>
+      <figcaption class="mt-5 flex items-center justify-center gap-4 text-sm text-white/80">
+        <span id="lb-caption"></span><span class="text-white/40" id="lb-count"></span>
+      </figcaption>
+    </figure>
+    <button type="button" id="lb-close" class="absolute top-5 right-5 grid place-items-center w-11 h-11 rounded-full bg-white/10 hover:bg-white hover:text-ink transition" aria-label="Close image viewer"><i data-lucide="x" class="w-5 h-5" aria-hidden="true"></i></button>
+    <button type="button" id="lb-prev" class="absolute left-3 sm:left-6 top-1/2 -translate-y-1/2 grid place-items-center w-11 h-11 rounded-full bg-white/10 hover:bg-white hover:text-ink transition" aria-label="Previous image"><i data-lucide="chevron-left" class="w-5 h-5" aria-hidden="true"></i></button>
+    <button type="button" id="lb-next" class="absolute right-3 sm:right-6 top-1/2 -translate-y-1/2 grid place-items-center w-11 h-11 rounded-full bg-white/10 hover:bg-white hover:text-ink transition" aria-label="Next image"><i data-lucide="chevron-right" class="w-5 h-5" aria-hidden="true"></i></button>
+  </div>
+</dialog>
+
+<script>
+(function () {
+  'use strict';
+
+  /* =====================================================
+     CONFIG: edit these placeholder values for a real site
+     ===================================================== */
+  const CONFIG = {
+    // PLACEHOLDER WhatsApp number: international format, digits only (no +, spaces or dashes)
+    whatsappNumber: '15550100199',
+    whatsappMessage: 'Hello Sage Dental Care, I would like to ask about an appointment.'
+  };
+
+  const $ = (s, r = document) => r.querySelector(s);
+  const $$ = (s, r = document) => Array.from(r.querySelectorAll(s));
+  const img = (id, w) => `https://images.unsplash.com/photo-${id}?auto=format&fit=crop&w=${w || 900}&q=70`;
+
+  /* ============ DATA ============ */
+  const NAV = [
+    ['home', 'Home'], ['about', 'About Us'], ['services', 'Our Services'], ['dentists', 'Our Dentists'],
+    ['why', 'Why Choose Us'], ['faq', 'FAQ'], ['contact', 'Contact Us']
+  ];
+
+  const SERVICES = [
+    { id: 'general', icon: 'stethoscope', title: 'General Dentistry',
+      text: 'Routine check-ups, fillings and preventive care to keep everyday oral health on track.',
+      detail: 'General dentistry covers the regular care that helps keep teeth and gums healthy, from examinations to simple restorative treatment.',
+      points: ['A conversation about any concerns or changes', 'An examination of teeth, gums and soft tissues', 'Clear recommendations and time for questions'] },
+    { id: 'cleaning', icon: 'sparkles', title: 'Teeth Cleaning',
+      text: 'Professional cleaning to remove build-up and leave your teeth feeling fresh and smooth.',
+      detail: 'A professional clean removes plaque and tartar from places that are hard to reach with brushing and flossing at home.',
+      points: ['Gentle removal of plaque and tartar', 'Polishing for a smooth, clean finish', 'Practical tips for brushing and flossing at home'] },
+    { id: 'root-canal', icon: 'activity', title: 'Root Canal',
+      text: 'Treatment that aims to relieve discomfort and preserve a tooth affected deep inside.',
+      detail: 'Root canal treatment addresses problems inside a tooth. Your dentist would explain each stage so you know what to expect.',
+      points: ['Assessment of the tooth and discussion of options', 'Treatment carried out with your comfort in mind', 'Aftercare guidance and a follow-up plan'] },
+    { id: 'implants', icon: 'anchor', title: 'Implants',
+      text: 'A long-term option for replacing missing teeth, planned carefully around your needs.',
+      detail: 'Dental implants are one way of replacing missing teeth. Suitability varies, so planning begins with a thorough consultation.',
+      points: ['Consultation to discuss goals and suitability', 'A step-by-step plan explained in plain language', 'Ongoing reviews throughout the process'] },
+    { id: 'whitening', icon: 'sun', title: 'Teeth Whitening',
+      text: 'Professionally guided whitening for a brighter smile, with realistic expectations.',
+      detail: 'Whitening can lighten the shade of natural teeth. Results differ from person to person and would be discussed beforehand.',
+      points: ['A check to confirm whitening is appropriate', 'Discussion of options and likely outcomes', 'Advice on looking after your results'] },
+    { id: 'aligners', icon: 'smile', title: 'Braces and Aligners',
+      text: 'Options for straightening teeth, from traditional braces to discreet clear aligners.',
+      detail: 'Orthodontic treatment gradually moves teeth into a new position. The right approach depends on your teeth and preferences.',
+      points: ['An assessment of your teeth and bite', 'A comparison of suitable options', 'Regular progress check-ins'] },
+    { id: 'emergency', icon: 'siren', title: 'Emergency Dental Care',
+      text: 'Prompt attention for urgent problems such as sudden pain or a damaged tooth.',
+      detail: 'Dental emergencies can be stressful. In a live clinic, this service would offer guidance on getting seen as soon as possible. For life-threatening emergencies, contact local emergency services.',
+      points: ['Call the clinic to describe what has happened', 'Advice on what to do before you arrive', 'Assessment and a plan for next steps'] }
+  ];
+
+  const WHY = [
+    { icon: 'heart-handshake', title: 'Personalized Care', text: 'Your visit is shaped around your needs, your pace and what matters most to you.' },
+    { icon: 'scan-line', title: 'Modern Equipment', text: 'Up-to-date tools and techniques that support careful, comfortable treatment.' },
+    { icon: 'armchair', title: 'Comfortable Environment', text: 'Quiet, light-filled rooms designed to help you settle in and feel at ease.' },
+    { icon: 'messages-square', title: 'Transparent Communication', text: 'Plain-language explanations and clear next steps, with time for questions.' }
+  ];
+
+  const DENTISTS = [
+    { name: 'Dr. Maya Ellison', role: 'General Dentistry', photo: '1559839734-2b71ea197ec2',
+      bio: 'Placeholder biography. This space would introduce the dentist, their approach to care and what patients can expect.' },
+    { name: 'Dr. Daniel Okafor', role: 'Restorative Care', photo: '1612349317150-e413f6a5b16d',
+      bio: 'Placeholder biography. A short, friendly paragraph about areas of interest and how they like to work with patients.' },
+    { name: 'Dr. Priya Raman', role: 'Braces and Aligners', photo: '1594824476967-48c8b964273f',
+      bio: 'Placeholder biography. Example text showing where a real profile, written by the clinic, would appear.' },
+    { name: 'Dr. Lucas Bennett', role: 'Preventive Care', photo: '1622253692010-333f2da6031d',
+      bio: 'Placeholder biography. Use this area to share a personal note that helps patients feel at ease before visiting.' }
+  ];
+
+  const JOURNEY = [
+    { icon: 'message-circle', title: 'Consultation', text: 'We start by listening to your concerns, your history and what you hope to achieve.' },
+    { icon: 'scan-search', title: 'Diagnosis', text: 'A careful examination helps us understand what is happening and why.' },
+    { icon: 'clipboard-list', title: 'Treatment Plan', text: 'You receive clear options and next steps, so you can decide with confidence.' },
+    { icon: 'calendar-check', title: 'Follow-up', text: 'We check in after treatment and plan ongoing care to keep things on track.' }
+  ];
+
+  const GALLERY = [
+    { id: '1629909615184-74f495363b67', caption: 'Treatment room', alt: 'Dental treatment room with modern equipment', span: 'col-span-2 row-span-2' },
+    { id: '1606811841689-23dfddce3e95', caption: 'Patient consultation', alt: 'Dentist with a patient during a consultation', span: '' },
+    { id: '1598256989800-fe5f95da9787', caption: 'Dental chair', alt: 'Dental chair and overhead light', span: '' },
+    { id: '1588776814546-1ffcf47267a5', caption: 'Gentle care', alt: 'Dental professional treating a patient', span: 'col-span-2' },
+    { id: '1609840114035-3c981b782dfe', caption: 'Careful treatment', alt: 'Dentist at work in the clinic', span: '' },
+    { id: '1606265752439-1f18756aa5fc', caption: 'Clinic details', alt: 'Detail view inside the dental clinic', span: '' },
+    { id: '1445527815219-ecbfec67492e', caption: 'Instruments', alt: 'Dental instruments prepared for a visit', span: 'col-span-2' }
+  ];
+
+  const TESTIMONIALS = [
+    { initials: 'A', who: 'Example Patient A', context: 'Sample feedback, general check-up',
+      quote: 'I was nervous before my visit, but everything was explained calmly and I never felt rushed.' },
+    { initials: 'B', who: 'Example Patient B', context: 'Sample feedback, teeth cleaning',
+      quote: 'The clinic felt peaceful and welcoming. I left knowing exactly what the next steps were.' },
+    { initials: 'C', who: 'Example Patient C', context: 'Sample feedback, aligner consultation',
+      quote: 'My questions were answered in plain language, and I felt comfortable making my own decision.' }
+  ];
+
+  const FAQ = [
+    { q: 'How do I book an appointment?', a: 'Use the Book Appointment form on this page or call the clinic. On this demo website the form is for demonstration only, so no real booking is made.' },
+    { q: 'What should I bring to my first visit?', a: 'It is helpful to bring a list of any medications you take, details of previous dental treatment if you have them, and any questions you would like to ask.' },
+    { q: 'How often should I have a check-up?', a: 'The right interval varies from person to person. Your dentist would recommend a schedule based on your individual oral health.' },
+    { q: 'Do you offer emergency appointments?', a: 'In a live clinic, this answer would explain how urgent appointments are handled and who to call. This is sample text for the demo.' },
+    { q: 'What payment options are available?', a: 'This is placeholder content. A real clinic would list accepted payment methods, insurance information and any payment plans here.' },
+    { q: 'Is Sage Dental Care a real clinic?', a: 'No. Sage Dental Care is a fictional brand created as a portfolio demo by FlowFoundry AI Solutions. The address, phone number, dentists and feedback are all sample content.' }
+  ];
+
+  const TIMES = ['9:00 AM','9:30 AM','10:00 AM','10:30 AM','11:00 AM','11:30 AM','12:00 PM','1:00 PM','1:30 PM','2:00 PM','2:30 PM','3:00 PM','3:30 PM','4:00 PM','4:30 PM','5:00 PM','5:30 PM'];
+
+  /* ============ RENDER (reusable template components) ============ */
+  $('#nav-desktop').innerHTML = NAV.map(([id, l]) => `<li><a href="#${id}" data-nav="${id}" class="nav-link">${l}</a></li>`).join('');
+  $('#nav-mobile').innerHTML = NAV.map(([id, l]) => `<li><a href="#${id}" data-nav="${id}" data-close-menu class="m-link">${l}<i data-lucide="arrow-up-right" class="w-4 h-4 text-sage-600" aria-hidden="true"></i></a></li>`).join('');
+  $('#footer-links').innerHTML = NAV.concat([['book', 'Book Appointment']]).map(([id, l]) => `<li><a href="#${id}" class="hover:text-white transition">${l}</a></li>`).join('');
+  $('#footer-treatments').innerHTML = SERVICES.map(s => `<li><a href="#services" class="hover:text-white transition">${s.title}</a></li>`).join('');
+
+  $('#services-grid').innerHTML = SERVICES.map((s, i) => `
+    <article class="reveal group flex flex-col bg-white rounded-3xl p-7 border border-ink/5 hover:border-sage-300 hover:shadow-soft hover:-translate-y-1 transition duration-300" style="--d:${i * 60}ms">
+      <span class="grid place-items-center w-12 h-12 rounded-2xl bg-sage-100 text-sage-600 group-hover:bg-sage-600 group-hover:text-white transition duration-300"><i data-lucide="${s.icon}" class="w-5 h-5" aria-hidden="true"></i></span>
+      <h3 class="mt-6 font-display text-xl text-ink">${s.title}</h3>
+      <p class="mt-2 text-sm leading-relaxed text-ink/70 flex-1">${s.text}</p>
+      <button type="button" data-service="${s.id}" class="mt-6 self-start inline-flex items-center gap-1.5 text-sm font-semibold text-sage-600 hover:text-sage-800" aria-label="Learn more about ${s.title}">
+        Learn More <i data-lucide="arrow-right" class="w-4 h-4 transition group-hover:translate-x-1" aria-hidden="true"></i>
+      </button>
+    </article>`).join('') + `
+    <article class="reveal on-dark flex flex-col justify-between bg-ink text-white rounded-3xl p-7" style="--d:${SERVICES.length * 60}ms">
+      <div>
+        <span class="grid place-items-center w-12 h-12 rounded-2xl bg-white/10 text-sage-200"><i data-lucide="calendar-days" class="w-5 h-5" aria-hidden="true"></i></span>
+        <h3 class="mt-6 font-display text-xl">Not sure what you need?</h3>
+        <p class="mt-2 text-sm leading-relaxed text-white/70">Start with a consultation and we will help you find the right path.</p>
+      </div>
+      <a href="#book" class="btn btn-light mt-6 self-start">Book a visit</a>
+    </article>`;
+
+  $('#why-grid').innerHTML = WHY.map((w, i) => `
+    <article class="reveal rounded-3xl border border-white/10 bg-white/[.04] p-7 hover:bg-white/[.08] hover:border-white/20 transition duration-300 ${i % 2 ? 'sm:translate-y-8' : ''}" style="--d:${i * 80}ms">
+      <span class="grid place-items-center w-12 h-12 rounded-2xl bg-sage-600/30 text-sage-200"><i data-lucide="${w.icon}" class="w-5 h-5" aria-hidden="true"></i></span>
+      <h3 class="mt-6 font-display text-xl">${w.title}</h3>
+      <p class="mt-2 text-sm leading-relaxed text-white/70">${w.text}</p>
+    </article>`).join('');
+
+  $('#dentists-grid').innerHTML = DENTISTS.map((d, i) => `
+    <article class="reveal group" style="--d:${i * 80}ms">
+      <div class="relative tone rounded-[1.75rem] aspect-[4/5]">
+        <img src="${img(d.photo, 640)}" alt="Stock portrait used as a placeholder for ${d.name} (sample profile)" class="absolute inset-0 w-full h-full object-cover object-top transition duration-700 group-hover:scale-105" loading="lazy" decoding="async" width="640" height="800">
+        <span class="absolute z-10 top-4 left-4 rounded-full bg-white/95 text-ink text-[11px] font-semibold tracking-wide px-3 py-1.5">Sample profile</span>
+      </div>
+      <h3 class="mt-5 font-display text-xl text-ink">${d.name} <span class="font-sans text-xs font-medium text-ink/45 align-middle">(sample name)</span></h3>
+      <p class="mt-1 text-xs font-semibold uppercase tracking-widest text-sage-600">${d.role}</p>
+      <p class="mt-3 text-sm leading-relaxed text-ink/65">${d.bio}</p>
+    </article>`).join('');
+
+  $('#journey-grid').innerHTML = JOURNEY.map((j, i) => `
+    <li class="reveal relative flex gap-5 lg:flex-col lg:items-center lg:text-center lg:gap-0" style="--d:${i * 100}ms">
+      <span class="relative z-10 grid place-items-center w-16 h-16 rounded-full bg-white border border-sage-300 text-sage-600 shadow-soft shrink-0"><i data-lucide="${j.icon}" class="w-6 h-6" aria-hidden="true"></i></span>
+      <div class="lg:mt-7">
+        <p class="text-xs font-bold tracking-[.22em] text-sage-500">STEP 0${i + 1}</p>
+        <h3 class="mt-2 font-display text-2xl text-ink">${j.title}</h3>
+        <p class="mt-2 text-sm leading-relaxed text-ink/70 lg:max-w-[15rem] lg:mx-auto">${j.text}</p>
+      </div>
+    </li>`).join('');
+
+  $('#gallery-grid').innerHTML = GALLERY.map((g, i) => `
+    <li class="reveal ${g.span}" style="--d:${i * 50}ms">
+      <button type="button" data-gallery="${i}" class="group relative tone block w-full h-full rounded-2xl sm:rounded-3xl" aria-label="View larger image: ${g.caption}">
+        <img src="${img(g.id, 900)}" alt="${g.alt}" class="absolute inset-0 w-full h-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" decoding="async">
+        <span class="absolute z-10 inset-0 bg-gradient-to-t from-ink/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100 transition duration-300"></span>
+        <span class="absolute z-10 left-4 bottom-4 right-4 flex items-center justify-between text-white text-sm font-medium opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 group-focus-visible:opacity-100 group-focus-visible:translate-y-0 transition duration-300">
+          ${g.caption}<span class="grid place-items-center w-8 h-8 rounded-full bg-white/20 backdrop-blur"><i data-lucide="expand" class="w-3.5 h-3.5" aria-hidden="true"></i></span>
+        </span>
+      </button>
+    </li>`).join('');
+
+  $('#testimonials-grid').innerHTML = TESTIMONIALS.map((t, i) => `
+    <figure class="reveal flex flex-col bg-white rounded-3xl p-8 border border-ink/5" style="--d:${i * 80}ms">
+      <div class="flex items-center justify-between">
+        <i data-lucide="quote" class="w-7 h-7 text-sage-300" aria-hidden="true"></i>
+        <span class="rounded-full border border-sage-200 bg-sage-50 text-sage-700 text-[11px] font-semibold px-3 py-1">Fictional example</span>
+      </div>
+      <blockquote class="mt-6 font-display text-xl leading-snug text-ink flex-1">“${t.quote}”</blockquote>
+      <figcaption class="mt-8 flex items-center gap-3 pt-6 border-t border-ink/10">
+        <span class="grid place-items-center w-11 h-11 rounded-full bg-sage-100 text-sage-700 font-display text-lg" aria-hidden="true">${t.initials}</span>
+        <span><span class="block text-sm font-semibold text-ink">${t.who}</span><span class="block text-xs text-ink/55">${t.context}</span></span>
+      </figcaption>
+    </figure>`).join('');
+
+  $('#faq-list').innerHTML = FAQ.map((f, i) => `
+    <div class="border-b border-ink/10">
+      <h3>
+        <button type="button" id="faq-b-${i}" class="faq-btn w-full flex items-center justify-between gap-6 py-6 text-left" aria-expanded="${i === 0}" aria-controls="faq-p-${i}">
+          <span class="font-display text-lg sm:text-xl text-ink">${f.q}</span>
+          <span class="faq-icon grid place-items-center shrink-0 w-9 h-9 rounded-full border border-ink/15 text-sage-600"><i data-lucide="plus" class="w-4 h-4" aria-hidden="true"></i></span>
+        </button>
+      </h3>
+      <div id="faq-p-${i}" role="region" aria-labelledby="faq-b-${i}" class="faq-panel ${i === 0 ? 'open' : ''}">
+        <div><p class="pb-7 pr-10 sm:pr-16 text-ink/70 leading-relaxed">${f.a}</p></div>
+      </div>
+    </div>`).join('');
+
+  const serviceSelect = $('#f-service');
+  SERVICES.forEach(s => serviceSelect.add(new Option(s.title, s.title)));
+  serviceSelect.add(new Option('Not sure / general enquiry', 'General enquiry'));
+  const timeSelect = $('#f-time');
+  TIMES.forEach(t => timeSelect.add(new Option(t, t)));
+
+  $('#year').textContent = new Date().getFullYear();
+
+  const paintIcons = () => { if (window.lucide && lucide.createIcons) lucide.createIcons(); };
+  paintIcons();
+
+  /* ============ WHATSAPP ============ */
+  const waUrl = `https://wa.me/${CONFIG.whatsappNumber}?text=${encodeURIComponent(CONFIG.whatsappMessage)}`;
+  $$('[data-wa]').forEach(a => { a.href = waUrl; });
+
+  /* ============ TOASTS ============ */
+  const toastRegion = $('#toast-region');
+  function toast(title, message, ms) {
+    const el = document.createElement('div');
+    el.className = 'toast flex items-start gap-3 bg-ink text-white rounded-2xl shadow-soft px-5 py-4 on-dark';
+    el.innerHTML = `
+      <span class="grid place-items-center w-8 h-8 rounded-full bg-sage-600 shrink-0"><i data-lucide="check" class="w-4 h-4" aria-hidden="true"></i></span>
+      <div class="flex-1 min-w-0"><p class="text-sm font-semibold"></p><p class="mt-0.5 text-sm text-white/70 leading-relaxed"></p></div>
+      <button type="button" class="grid place-items-center w-7 h-7 rounded-full text-white/60 hover:text-white hover:bg-white/10 shrink-0" aria-label="Dismiss notification"><i data-lucide="x" class="w-4 h-4" aria-hidden="true"></i></button>`;
+    const ps = el.querySelectorAll('p');
+    ps[0].textContent = title; ps[1].textContent = message;
+    const remove = () => el.remove();
+    el.querySelector('button').addEventListener('click', remove);
+    toastRegion.appendChild(el);
+    paintIcons();
+    setTimeout(remove, ms || 9000);
+  }
+
+  $$('[data-placeholder]').forEach(a => a.addEventListener('click', e => {
+    e.preventDefault();
+    toast('Placeholder link', 'This page is not included in the demo website.', 5000);
+  }));
+
+  /* ============ HEADER + MOBILE MENU ============ */
+  const header = $('#site-header');
+  const menuBtn = $('#menu-btn');
+  const menu = $('#mobile-menu');
+  const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 40);
+  onScroll();
+  window.addEventListener('scroll', onScroll, { passive: true });
+
+  function setMenu(open) {
+    menu.hidden = !open;
+    menuBtn.setAttribute('aria-expanded', String(open));
+    menuBtn.setAttribute('aria-label', open ? 'Close navigation menu' : 'Open navigation menu');
+    $('[data-icon="open"]', menuBtn).hidden = open;
+    $('[data-icon="close"]', menuBtn).hidden = !open;
+  }
+  menuBtn.addEventListener('click', () => setMenu(menu.hidden));
+  $$('[data-close-menu]').forEach(a => a.addEventListener('click', () => setMenu(false)));
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && !menu.hidden) { setMenu(false); menuBtn.focus(); }
+  });
+  document.addEventListener('click', e => { if (!menu.hidden && !header.contains(e.target)) setMenu(false); });
+  window.matchMedia('(min-width: 1280px)').addEventListener('change', e => { if (e.matches) setMenu(false); });
+
+  /* ============ SCROLL SPY ============ */
+  if ('IntersectionObserver' in window) {
+    const spy = new IntersectionObserver(entries => {
+      entries.forEach(en => {
+        if (!en.isIntersecting) return;
+        const id = en.target.id;
+        $$('[data-nav]').forEach(a => {
+          if (a.dataset.nav === id) a.setAttribute('aria-current', 'true'); else a.removeAttribute('aria-current');
+        });
+      });
+    }, { rootMargin: '-45% 0px -50% 0px' });
+    NAV.forEach(([id]) => { const s = document.getElementById(id); if (s) spy.observe(s); });
+
+    /* Reveal on scroll */
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(en => { if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); } });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+    $$('.reveal').forEach(el => io.observe(el));
+  } else {
+    $$('.reveal').forEach(el => el.classList.add('in'));
+  }
+
+  /* ============ FAQ ACCORDION ============ */
+  $$('.faq-btn').forEach(btn => btn.addEventListener('click', () => {
+    const willOpen = btn.getAttribute('aria-expanded') !== 'true';
+    $$('.faq-btn').forEach(b => {
+      b.setAttribute('aria-expanded', 'false');
+      document.getElementById(b.getAttribute('aria-controls')).classList.remove('open');
+    });
+    if (willOpen) {
+      btn.setAttribute('aria-expanded', 'true');
+      document.getElementById(btn.getAttribute('aria-controls')).classList.add('open');
+    }
+  }));
+
+  /* ============ DIALOG HELPERS ============ */
+  function openDialog(d) { if (d.showModal) d.showModal(); else d.setAttribute('open', ''); }
+  function closeDialog(d) { if (d.close) d.close(); else d.removeAttribute('open'); }
+
+  /* ============ SERVICE DIALOG ============ */
+  const sd = $('#service-dialog');
+  let currentService = null, sdTrigger = null;
+  $$('[data-service]').forEach(btn => btn.addEventListener('click', () => {
+    const s = SERVICES.find(x => x.id === btn.dataset.service);
+    if (!s) return;
+    currentService = s; sdTrigger = btn;
+    $('#sd-icon').innerHTML = `<i data-lucide="${s.icon}" class="w-5 h-5" aria-hidden="true"></i>`;
+    $('#sd-title').textContent = s.title;
+    $('#sd-detail').textContent = s.detail;
+    $('#sd-points').innerHTML = s.points.map(p => `<li class="flex items-start gap-3"><span class="grid place-items-center w-6 h-6 rounded-full bg-sage-100 text-sage-600 shrink-0"><i data-lucide="check" class="w-3.5 h-3.5" aria-hidden="true"></i></span>${p}</li>`).join('');
+    paintIcons();
+    openDialog(sd);
+  }));
+  $$('[data-dialog-close]', sd).forEach(b => b.addEventListener('click', () => closeDialog(sd)));
+  sd.addEventListener('click', e => { if (e.target === sd) closeDialog(sd); });
+  sd.addEventListener('close', () => { if (sdTrigger) { sdTrigger.focus(); } });
+  $('#sd-book').addEventListener('click', () => {
+    if (currentService) serviceSelect.value = currentService.title;
+    sdTrigger = null;
+    closeDialog(sd);
+    clearError(serviceSelect);
+    document.getElementById('book').scrollIntoView({ behavior: 'smooth' });
+    setTimeout(() => $('#f-name').focus({ preventScroll: true }), 650);
+  });
+
+  /* ============ LIGHTBOX ============ */
+  const lb = $('#lightbox');
+  let lbIndex = 0, lbTrigger = null;
+  function showImage(i) {
+    lbIndex = (i + GALLERY.length) % GALLERY.length;
+    const g = GALLERY[lbIndex];
+    const el = $('#lb-img');
+    delete el.dataset.fallback;
+    el.src = img(g.id, 1600);
+    el.alt = g.alt;
+    $('#lb-caption').textContent = g.caption;
+    $('#lb-count').textContent = `${lbIndex + 1} / ${GALLERY.length}`;
+  }
+  $$('[data-gallery]').forEach(btn => btn.addEventListener('click', () => {
+    lbTrigger = btn;
+    showImage(Number(btn.dataset.gallery));
+    openDialog(lb);
+    $('#lb-close').focus();
+  }));
+  $('#lb-close').addEventListener('click', () => closeDialog(lb));
+  $('#lb-prev').addEventListener('click', () => showImage(lbIndex - 1));
+  $('#lb-next').addEventListener('click', () => showImage(lbIndex + 1));
+  lb.addEventListener('click', e => { if (e.target === lb || e.target.hasAttribute('data-lb-backdrop')) closeDialog(lb); });
+  lb.addEventListener('keydown', e => {
+    if (e.key === 'ArrowLeft') { e.preventDefault(); showImage(lbIndex - 1); }
+    if (e.key === 'ArrowRight') { e.preventDefault(); showImage(lbIndex + 1); }
+  });
+  lb.addEventListener('close', () => { if (lbTrigger) lbTrigger.focus(); });
+
+  /* ============ APPOINTMENT FORM ============ */
+  const form = $('#book-form');
+  const dateInput = $('#f-date');
+  const todayStr = (() => { const d = new Date(); return new Date(d.getTime() - d.getTimezoneOffset() * 60000).toISOString().slice(0, 10); })();
+  dateInput.min = todayStr;
+
+  const validators = {
+    name: v => v.trim().length >= 2 ? '' : 'Please enter your full name.',
+    phone: v => (/^[+()\-.\s\d]{7,22}$/.test(v.trim()) && v.replace(/\D/g, '').length >= 7) ? '' : 'Please enter a valid phone number.',
+    service: v => v ? '' : 'Please choose a service.',
+    date: v => !v ? 'Please choose a preferred date.' : (v < todayStr ? 'Please choose today or a future date.' : ''),
+    time: v => v ? '' : 'Please choose a preferred time.',
+    notes: v => v.length <= 500 ? '' : 'Please keep notes under 500 characters.'
+  };
+
+  function errorEl(field) { return document.getElementById('e-' + field.name); }
+  function clearError(field) {
+    field.removeAttribute('aria-invalid');
+    const e = errorEl(field); if (e) { e.hidden = true; e.textContent = ''; }
+  }
+  function validateField(field) {
+    const fn = validators[field.name];
+    if (!fn) return true;
+    const msg = fn(field.value);
+    const e = errorEl(field);
+    if (msg) {
+      field.setAttribute('aria-invalid', 'true');
+      e.innerHTML = '<i data-lucide="circle-alert" class="w-3.5 h-3.5 shrink-0" aria-hidden="true"></i><span></span>';
+      e.querySelector('span').textContent = msg;
+      e.hidden = false;
+      paintIcons();
+      return false;
+    }
+    clearError(field);
+    return true;
+  }
+
+  const fields = $$('input, select, textarea', form);
+  fields.forEach(f => {
+    f.addEventListener('blur', () => { if (f.value || f.getAttribute('aria-invalid')) validateField(f); });
+    f.addEventListener('input', () => { if (f.getAttribute('aria-invalid')) validateField(f); });
+    f.addEventListener('change', () => { if (f.getAttribute('aria-invalid')) validateField(f); });
+  });
+  const notes = $('#f-notes');
+  notes.addEventListener('input', () => { $('#notes-count').textContent = `${notes.value.length} / 500`; });
+
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    const invalid = fields.filter(f => !validateField(f));
+    if (invalid.length) { invalid[0].focus(); return; }
+
+    const data = new FormData(form);
+    const prettyDate = new Date(data.get('date') + 'T00:00:00').toLocaleDateString(undefined, { weekday: 'long', month: 'long', day: 'numeric' });
+    const summary = `Your request for ${data.get('service')} on ${prettyDate} at ${data.get('time')} was captured for demonstration purposes only. This is a demo website, so no real appointment was booked and your details were not stored or sent.`;
+
+    $('#form-success-text').textContent = summary;
+    const box = $('#form-success');
+    box.hidden = false;
+    form.reset();
+    fields.forEach(clearError);
+    $('#notes-count').textContent = '0 / 500';
+    box.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    box.focus({ preventScroll: true });
+    toast('Demo request received', 'This is a demo website. No real appointment was booked.');
+  });
+})();
+</script>
+</body>
+</html>
